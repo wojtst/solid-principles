@@ -42,11 +42,12 @@
   <ItemGroup>
     <Compile Include="Employee\Bad\Employee.cs" />
     <Compile Include="Employee\Bad\EmployeeEscalated.cs" />
+    <Compile Include="Employee\Bad\EmployeeHelper.cs" />
     <Compile Include="Employee\Good\Employee.cs" />
-    <Compile Include="Employee\Good\IEmployeeDescriptionFactory.cs" />
-    <Compile Include="Employee\Good\IEmployeePaymentCalculator.cs" />
-    <Compile Include="Employee\Good\IEmployeeRepository.cs" />
-    <Compile Include="Employee\Good\INotificationSender.cs" />
+    <Compile Include="Employee\Good\EmployeeDescriptionFactory.cs" />
+    <Compile Include="Employee\Good\EmployeePaymentCalculator.cs" />
+    <Compile Include="Employee\Good\EmployeeRepository.cs" />
+    <Compile Include="Employee\Good\NotificationSender.cs" />
     <Compile Include="Employee\Message.cs" />
     <Compile Include="Messages\Bad\IEmailMessage.cs" />
     <Compile Include="Messages\Bad\IMessage.cs" />
