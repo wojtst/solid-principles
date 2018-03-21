@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D50FB2E1-C91D-4AA9-B0EB-3A77F6B006BD}</ProjectGuid>
+    <ProjectGuid>{612CBBCC-E29C-497F-ABEE-EB95B81D1277}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SolidPrinciples.Srp</RootNamespace>
-    <AssemblyName>SolidPrinciples.Srp</AssemblyName>
+    <RootNamespace>SolidPrinciples.Ocp</RootNamespace>
+    <AssemblyName>SolidPrinciples.Ocp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,27 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee\Bad\Employee.cs" />
-    <Compile Include="Employee\Bad\EmployeeEscalated.cs" />
-    <Compile Include="Employee\Good\Employee.cs" />
-    <Compile Include="Employee\Good\IEmployeeDescriptionFactory.cs" />
-    <Compile Include="Employee\Good\IEmployeePaymentCalculator.cs" />
-    <Compile Include="Employee\Good\IEmployeeRepository.cs" />
-    <Compile Include="Employee\Good\INotificationSender.cs" />
-    <Compile Include="Employee\Message.cs" />
-    <Compile Include="Messages\Bad\IEmailMessage.cs" />
-    <Compile Include="Messages\Bad\IMessage.cs" />
-    <Compile Include="Messages\Bad\SmsMessage.cs" />
-    <Compile Include="Messages\Bad\SmtpMessage.cs" />
-    <Compile Include="Messages\Good\IEmailMessage.cs" />
-    <Compile Include="Messages\Good\IMessage.cs" />
-    <Compile Include="Messages\Good\Senders\IMessageSender.cs" />
-    <Compile Include="Messages\Good\Senders\SmsMessageSender.cs" />
-    <Compile Include="Messages\Good\Senders\SmtpMessageSender.cs" />
-    <Compile Include="Messages\Good\SmsMessage.cs" />
-    <Compile Include="Messages\Good\SmtpMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
