@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
 
-namespace SolidPrinciples.Srp.Employee.Bad
+namespace SolidPrinciples.Srp.Step0
 {
-    public class Employee
+    public class EmployeeEscalated
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -47,7 +47,27 @@ namespace SolidPrinciples.Srp.Employee.Bad
             return builder.ToString().Trim();
         }
 
-        public decimal CalculatePayment()
+        public string GetEnglishEmployeeDescription()
+        {
+            return FirstName;
+        }
+
+        public string GetElvishEmployeeDescription()
+        {
+            return FirstName;
+        }
+
+        public string GetSpanishEmployeeDescription()
+        {
+            return FirstName;
+        }
+
+        public decimal CalculateCorpoRatPayment()
+        {
+            return 0;
+        }
+
+        public decimal CalculateRegularPayment()
         {
             var employmentTime = DateTime.Now - EmploymentDay;
 
@@ -59,20 +79,61 @@ namespace SolidPrinciples.Srp.Employee.Bad
             return Salary;
         }
 
-        public Employee GetById(Guid id)
+        public decimal CalculateManagerPayment()
+        {
+            return Salary * 10;
+        }
+
+        public decimal CalculateCeoPayment()
+        {
+            return decimal.MaxValue;
+        }
+
+        public EmployeeEscalated GetById(Guid id)
         {
             // get a client from some data source
             return this;
         }
 
-        public void Save()
+        public EmployeeEscalated GetFromFile(string path)
+        {
+            return this;
+        }
+
+        public void SaveInDatabase()
         {
             // save client in some data source
+        }
+
+        public void SaveInFile()
+        {
         }
 
         public void SendNotificationEmail(Message message)
         {
             // send e-mail to the employee
+        }
+
+        public void SendThankYouEmail(Message message)
+        {
+            // send e-mail to the employee
+        }
+
+        public void SendYouAreFiredEmail(Message message)
+        {
+            // send e-mail to the employee
+        }
+
+        public void SendNotificationSms(Message message)
+        {
+        }
+
+        public void SendThankYouSms(Message message)
+        {
+        }
+
+        public void SendYouAreFiredSms(Message message)
+        {
         }
     }
 }

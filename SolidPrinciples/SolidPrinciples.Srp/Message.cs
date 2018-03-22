@@ -1,4 +1,4 @@
-﻿namespace SolidPrinciples.Srp.Employee
+﻿namespace SolidPrinciples.Srp
 {
     public class Message
     {

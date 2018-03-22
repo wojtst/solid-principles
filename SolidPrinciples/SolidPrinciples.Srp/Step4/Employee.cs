@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SolidPrinciples.Srp.Employee.Good
+namespace SolidPrinciples.Srp.Step4
 {
     public class Employee
     {

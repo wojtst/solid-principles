@@ -1,19 +1,18 @@
 ﻿using System;
 
-namespace SolidPrinciples.Srp.Employee.Good
+namespace SolidPrinciples.Srp.Step1
 {
     public class EmployeeRepository
     {
         public Employee GetById(Guid id)
         {
-            // ...
-            throw new NotImplementedException();
+            // get an employee from some data source
+            return new Employee();
         }
 
         public void Save(Employee employee)
         {
-            // ...
-            throw new NotImplementedException();
+            // save employee in some data source
         }
     }
 }

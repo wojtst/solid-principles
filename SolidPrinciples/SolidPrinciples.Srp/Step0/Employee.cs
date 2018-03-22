@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
 
-namespace SolidPrinciples.Srp.Employee.Bad
+namespace SolidPrinciples.Srp.Step0
 {
-    public class EmployeeEscalated
+    public class Employee
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -42,32 +42,13 @@ namespace SolidPrinciples.Srp.Employee.Bad
             var builder = new StringBuilder();
 
             builder.AppendLine($"{jobTitle} {FirstName} {LastName}");
-            builder.AppendLine($"Contact: {Email}");
+            builder.AppendLine($"E-mail: {Email}");
+            builder.AppendLine($"Phone: {PhoneNumber}");
 
             return builder.ToString().Trim();
         }
 
-        public string GetEnglishEmployeeDescription()
-        {
-            return FirstName;
-        }
-
-        public string GetElvishEmployeeDescription()
-        {
-            return FirstName;
-        }
-
-        public string GetSpanishEmployeeDescription()
-        {
-            return FirstName;
-        }
-
-        public decimal CalculateCorpoRatPayment()
-        {
-            return 0;
-        }
-
-        public decimal CalculateRegularPayment()
+        public decimal CalculatePayment()
         {
             var employmentTime = DateTime.Now - EmploymentDay;
 
@@ -79,61 +60,20 @@ namespace SolidPrinciples.Srp.Employee.Bad
             return Salary;
         }
 
-        public decimal CalculateManagerPayment()
+        public Employee GetById(Guid id)
         {
-            return Salary * 10;
-        }
-
-        public decimal CalculateCeoPayment()
-        {
-            return decimal.MaxValue;
-        }
-
-        public EmployeeEscalated GetById(Guid id)
-        {
-            // get a client from some data source
+            // get the employee from some data source
             return this;
         }
 
-        public EmployeeEscalated GetFromFile(string path)
+        public void Save()
         {
-            return this;
-        }
-
-        public void SaveInDatabase()
-        {
-            // save client in some data source
-        }
-
-        public void SaveInFile()
-        {
+            // save the employee in some data source
         }
 
         public void SendNotificationEmail(Message message)
         {
             // send e-mail to the employee
-        }
-
-        public void SendThankYouEmail(Message message)
-        {
-            // send e-mail to the employee
-        }
-
-        public void SendYouAreFiredEmail(Message message)
-        {
-            // send e-mail to the employee
-        }
-
-        public void SendNotificationSms(Message message)
-        {
-        }
-
-        public void SendThankYouSms(Message message)
-        {
-        }
-
-        public void SendYouAreFiredSms(Message message)
-        {
         }
     }
 }
