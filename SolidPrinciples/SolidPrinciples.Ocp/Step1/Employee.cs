@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SolidPrinciples.Ocp.Employee
+namespace SolidPrinciples.Ocp.Step1
 {
     public class Employee
     {

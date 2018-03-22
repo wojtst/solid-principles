@@ -55,7 +55,7 @@
     <Compile Include="Step3\EmployeeRepository.cs" />
     <Compile Include="Step3\NotificationSender.cs" />
     <Compile Include="Step4\Employee.cs" />
-    <Compile Include="Step4\EmployeeDescriptionFactory.cs" />
+    <Compile Include="Step4\EmployeeDescriptionGenerator.cs" />
     <Compile Include="Step4\EmployeePaymentCalculator.cs" />
     <Compile Include="Step4\EmployeeRepository.cs" />
     <Compile Include="Step4\NotificationSender.cs" />

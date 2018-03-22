@@ -3,9 +3,9 @@ using System.Text;
 
 namespace SolidPrinciples.Srp.Step4
 {
-    public class EmployeeDescriptionFactory
+    public class EmployeeDescriptionGenerator
     {
-        public string CreateEmployeeDescription(Employee employee)
+        public string GetEmployeeDescription(Employee employee)
         {
             string jobTitle;
 

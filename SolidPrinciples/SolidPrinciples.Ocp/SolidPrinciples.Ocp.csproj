@@ -40,13 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee\Bad\EmployeeDescriptionFactory.cs" />
-    <Compile Include="Employee\Employee.cs" />
-    <Compile Include="Employee\Good\EmployeeEnglishDescriptionFactory.cs" />
-    <Compile Include="Employee\Good\EmployeePolishDescriptionFactory.cs" />
-    <Compile Include="Employee\Good\IEmployeeDescriptionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Step0\Employee.cs" />
+    <Compile Include="Step0\EmployeeDescriptionGenerator.cs" />
+    <Compile Include="Step1\Employee.cs" />
+    <Compile Include="Step1\IEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step1\InternalEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step1\OfficialEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step1\UnofficialEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step2\DescriptionType.cs" />
+    <Compile Include="Step2\Employee.cs" />
+    <Compile Include="Step2\EmployeeDescriptionGeneratorFactory.cs" />
+    <Compile Include="Step2\IEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step2\InternalEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step2\OfficialEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step2\UnofficialEmployeeDescriptionGeneratorStrategy.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
