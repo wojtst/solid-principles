@@ -1,8 +1,7 @@
-﻿namespace SolidPrinciples.Ocp.Step2
+﻿namespace SolidPrinciples.Ocp.Step1.DescriptionGenerator
 {
     public interface IEmployeeDescriptionGeneratorStrategy
     {
-        DescriptionType DescriptionType { get; }
         string GetEmployeeDescription(Employee employee);
     }
 }

@@ -1,11 +1,9 @@
 ﻿using System;
 
-namespace SolidPrinciples.Ocp.Step2
+namespace SolidPrinciples.Ocp.Step1.DescriptionGenerator
 {
     public class OfficialEmployeeDescriptionGeneratorStrategy : IEmployeeDescriptionGeneratorStrategy
     {
-        public DescriptionType DescriptionType => DescriptionType.Official;
-
         public string GetEmployeeDescription(Employee employee)
         {
             throw new NotImplementedException();

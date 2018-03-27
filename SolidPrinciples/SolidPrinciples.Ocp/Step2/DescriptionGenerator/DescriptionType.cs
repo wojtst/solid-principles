@@ -1,4 +1,4 @@
-﻿namespace SolidPrinciples.Ocp.Step2
+﻿namespace SolidPrinciples.Ocp.Step2.DescriptionGenerator
 {
     public enum DescriptionType
     {

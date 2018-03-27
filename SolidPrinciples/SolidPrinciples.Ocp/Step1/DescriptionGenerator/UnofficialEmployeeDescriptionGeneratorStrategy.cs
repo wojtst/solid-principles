@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace SolidPrinciples.Ocp.Step1
+namespace SolidPrinciples.Ocp.Step1.DescriptionGenerator
 {
-    public class InternalEmployeeDescriptionGeneratorStrategy : IEmployeeDescriptionGeneratorStrategy
+    public class UnofficialEmployeeDescriptionGeneratorStrategy : IEmployeeDescriptionGeneratorStrategy
     {
         public string GetEmployeeDescription(Employee employee)
         {

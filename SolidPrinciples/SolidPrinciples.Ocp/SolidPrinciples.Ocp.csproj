@@ -43,18 +43,30 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Step0\Employee.cs" />
     <Compile Include="Step0\EmployeeDescriptionGenerator.cs" />
+    <Compile Include="Step0\EmployeePaymentCalculator.cs" />
     <Compile Include="Step1\Employee.cs" />
-    <Compile Include="Step1\IEmployeeDescriptionGeneratorStrategy.cs" />
-    <Compile Include="Step1\InternalEmployeeDescriptionGeneratorStrategy.cs" />
-    <Compile Include="Step1\OfficialEmployeeDescriptionGeneratorStrategy.cs" />
-    <Compile Include="Step1\UnofficialEmployeeDescriptionGeneratorStrategy.cs" />
-    <Compile Include="Step2\DescriptionType.cs" />
+    <Compile Include="Step1\DescriptionGenerator\IEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step1\PaymentCalculator\IEmployeePaymentCalculator.cs" />
+    <Compile Include="Step1\DescriptionGenerator\InternalEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step1\DescriptionGenerator\OfficialEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step1\PaymentCalculator\ManagerPaymentCalculator.cs" />
+    <Compile Include="Step1\PaymentCalculator\RegularEmployeePaymentCalculator.cs" />
+    <Compile Include="Step1\DescriptionGenerator\UnofficialEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step1\PaymentCalculator\TraineePaymentCalculator.cs" />
+    <Compile Include="Step2\DescriptionGenerator\DescriptionType.cs" />
     <Compile Include="Step2\Employee.cs" />
-    <Compile Include="Step2\EmployeeDescriptionGeneratorFactory.cs" />
-    <Compile Include="Step2\IEmployeeDescriptionGeneratorStrategy.cs" />
-    <Compile Include="Step2\InternalEmployeeDescriptionGeneratorStrategy.cs" />
-    <Compile Include="Step2\OfficialEmployeeDescriptionGeneratorStrategy.cs" />
-    <Compile Include="Step2\UnofficialEmployeeDescriptionGeneratorStrategy.cs" />
+    <Compile Include="Step2\DescriptionGenerator\EmployeeDescriptionGeneratorFactory.cs" />
+    <Compile Include="Step2\DescriptionGenerator\IEmployeeDescriptionGenerator.cs" />
+    <Compile Include="Step2\DescriptionGenerator\InternalEmployeeDescriptionGenerator.cs" />
+    <Compile Include="Step2\DescriptionGenerator\OfficialEmployeeDescriptionGenerator.cs" />
+    <Compile Include="Step2\DescriptionGenerator\UnofficialEmployeeDescriptionGenerator.cs" />
+    <Compile Include="Step2\PaymentCalculator\EmployeePaymentCalculatorFactory.cs" />
+    <Compile Include="Step2\PaymentCalculator\EmployeeType.cs" />
+    <Compile Include="Step2\PaymentCalculator\IEmployeePaymentCalculator.cs" />
+    <Compile Include="Step2\PaymentCalculator\ManagerPaymentCalculator.cs" />
+    <Compile Include="Step2\PaymentCalculator\RegularEmployeePaymentCalculator.cs" />
+    <Compile Include="Step2\PaymentCalculator\TraineePaymentCalculator.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
